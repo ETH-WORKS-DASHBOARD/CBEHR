@@ -1,0 +1,7 @@
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\obj\Debug\CBEHR.csprojResolveAssemblyReference.cache
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\bin\Debug\CBEHR.dll
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\bin\Debug\CBEHR.pdb
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\bin\Debug\log4net.dll
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\bin\Debug\log4net.xml
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\obj\Debug\CBEHR.dll
+D:\D\SSL\Projects\C#\CBE_ETH\CBEHR\CBEHR\obj\Debug\CBEHR.pdb

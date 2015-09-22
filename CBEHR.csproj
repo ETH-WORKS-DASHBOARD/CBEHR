@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB9CDB52-39D4-45FF-BD90-310C607C830F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CBEHR</RootNamespace>
+    <AssemblyName>CBEHR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\SW\Programming Tools\libraries\log4net-1.2.13-bin-newkey\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cbe\com\main\branch\Branch.cs" />
+    <Compile Include="cbe\com\main\branch\manager\BranchEmployeeStatusManager.cs" />
+    <Compile Include="cbe\com\main\branch\manager\BranchManager.cs" />
+    <Compile Include="cbe\com\main\dbAccess\DateTimeSpan.cs" />
+    <Compile Include="cbe\com\main\dbAccess\DbAccessConstants.cs" />
+    <Compile Include="cbe\com\main\dbAccess\DBOperationErrorConstants.cs" />
+    <Compile Include="cbe\com\main\dbAccess\DBOperationsUtil.cs" />
+    <Compile Include="cbe\com\main\employee\Employee.cs" />
+    <Compile Include="cbe\com\main\employee\manager\EmployeeManager.cs" />
+    <Compile Include="cbe\com\main\employee\EmployeeRemark.cs" />
+    <Compile Include="cbe\com\main\employee\InactiveEmployee.cs" />
+    <Compile Include="cbe\com\main\loger\manager\LoggerManager.cs" />
+    <Compile Include="cbe\com\main\imanager\IManager.cs" />
+    <Compile Include="cbe\com\main\notification\Notification.cs" />
+    <Compile Include="cbe\com\main\notification\manager\NotificationManager.cs" />
+    <Compile Include="cbe\com\main\pageAccess\manager\PageAccessManager.cs" />
+    <Compile Include="cbe\com\main\pageAccess\PageConstants.cs" />
+    <Compile Include="cbe\com\main\promotion\manager\PromotionManager.cs" />
+    <Compile Include="cbe\com\main\promotion\Promotion.cs" />
+    <Compile Include="cbe\com\main\promotion\PromotionAssigment.cs" />
+    <Compile Include="cbe\com\main\promotion\PromotionConstants.cs" />
+    <Compile Include="cbe\com\main\transaction\TransactionResponse.cs" />
+    <Compile Include="cbe\com\main\vacancy\Vacancy.cs" />
+    <Compile Include="cbe\com\main\vacancy\VacancyApplicant.cs" />
+    <Compile Include="cbe\com\main\vacancy\VacancyConstants.cs" />
+    <Compile Include="cbe\com\main\vacancy\VacancyEvaluationForm.cs" />
+    <Compile Include="cbe\com\main\vacancy\manager\VacancyRegistrationAndEvaluationManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cbe\com\test\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
